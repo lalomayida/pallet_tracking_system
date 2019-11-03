@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+  height: 4rem;
+  margin-top: -4rem;
+  content: "";
+  display: block;
+}
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar {
+  padding: .7rem 1rem;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  transition: background-color .5s ease 0s;
+}
+.navbar-brand img {
+  height: 3rem;
+}
+.svg-inline--fa.fa-w-14 {
+  color: white;
+  font-size: 1.6rem;
+}
+.navbar-nav li {
+  padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #BF0811;
+}
+.navbar.solid {
+  background: rgba(0, 0, 0, 0.8)!important;
+  transition: background-color 1s ease 0s;
+}
+
+/*============= LANDING PAGE =============*/
+
+.carousel-item {
+  height: 100vh;
+  min-height: 18.75rem; /*--- (300px for mobile) --*/
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #1A1A1A; /*--- For Firefox white between slides --*/
+}
+
+.carousel-caption {
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: left!important;
+  height:100%;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  padding: 12rem 17rem 0 0!important;
+}
+.carousel-item h1 {
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .5rem .5rem .8rem black;
+  padding-bottom: .3rem;
+  line-height: 3.8rem;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1300px */
+@media (max-width: 1299px) {
+  .carousel-item h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .carousel-caption {
+    padding: 12rem 17rem 0 4rem!important;
+  }
+}
+
+@media (max-width: 1120px) {
+  .texto-servicios h3 {
+  font-size: 1.3rem;
+  }
+}
+
+/* Devices under 1050px */
+@media (max-width: 1050px) {
+  .carousel-caption {
+    padding: 12rem 10rem 0 4rem!important;
+  }
+  .texto-servicios h3 {
+    font-size: 1rem;
+    }
+  .lista-tecnologia h4{
+    font-size: 1.3rem!important;
+  }
+}
+
+
+
+
+/* Devices under 1050px */
+@media (max-width: 1024px) {
+  h3.vertical.heading{
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    text-align: center;
+    width: 100%;
+  }
+  .parrafo-cobertura{
+    display: inline !important;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+  }
+  .lista-vertical{
+    display: none;
+  }
+  .mapa-cobertura img{
+    width: 100%;
+  }
+
+}
+
+
+
+
+/* Devices under 992px (lg) */
+@media (max-width: 991px) {
+  .carousel-item h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .caption h1 {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+    padding-bottom: .8rem;
+  }
+  .caption h3 {
+    font-size: 2.2rem;
+    padding-bottom: 1.7rem;
+  }
+  .btn-lg {
+    padding: .7rem 1.2rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 2.1rem;
+  }
+  .carousel-caption {
+    padding: 12rem 7rem 0 4rem!important;
+  }
+  .texto-servicios h3 {
+    font-size: .85rem;
+    }
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767px) {
+  .carousel-caption {
+    padding: 12rem 0 0 0!important;
+  }
+  .caption h1 {
+    font-size: 2.7rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .caption h3 {
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    padding: .6rem 1.1rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.8rem;
+  }
+  /*
+  #fixed {
+    background-image: url('img/fixed/apple-mobile.png');
+  }
+  #fixed-2 {
+    background-image: url('img/fixed/office-mobile.png');
+  }
+  #fixed-3 {
+    background-image: url('img/fixed/office-mobile.png');
+  }
+  footer {
+    background: url('img/footer/footer-mobile.png') no-repeat;
+  }*/
+  .clients img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .top-scroll {
+    display: none!important;
+  }
+  .texto-servicios h3{
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 630px) {
+  .lista-cobertura li{
+    font-size: .8rem;
+  }
+  .lista-tecnologia h4{
+    font-size: 1rem!important;
+  }
+}
+
+
+
+@media (max-width: 610px) {
+  .carousel-item h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .texto-servicios h3{
+   text-align: center;
+   width: 100%;
+  }
+  .lista-cobertura li{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .carousel-item h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .carousel-item h1 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .lista-cobertura li{
+    font-size: .7rem;
+  }
+  h3.vertical.heading, h3.heading{
+    font-size: 2rem;
+  }
+
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575px) {
+  .caption h1 {
+    font-size: 1.9rem;
+    letter-spacing: .1rem;
+    padding-bottom: .4rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .btn-lg {
+    padding: .4rem .9rem;
+    font-size: .9rem;
+  }
+  .narrow {
+    width: 85%;
+  }
+ 
+}
+@media (max-width: 420px) {
+.texto-servicios h3 {
+  font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 367px) {
+  .texto-servicios h3 {
+    font-size: 1rem;
+    }
+  }
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
