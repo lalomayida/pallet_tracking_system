@@ -38,7 +38,7 @@
 							<a class="nav-link" href="pallet-information.aspx ">Información del Pallet</a>
 						</li>
 						<li class="nav-item text-center">
-							<a class="nav-link" href="index.aspx">Reporte de Fallas</a>
+							<a class="nav-link" href="failure-report.aspx">Reporte de Fallas</a>
 						</li>
 						<li class="nav-item text-center">
 							<a class="nav-link" href="index.aspx">Mantenimiento Preventivo</a>

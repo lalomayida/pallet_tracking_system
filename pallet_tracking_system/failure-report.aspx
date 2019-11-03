@@ -56,13 +56,12 @@
 			<!--- Start Carousel Inner -->
 			<div class="carousel-inner" role="listbox">
 				<!-- Slide One -->
-				<div class="carousel-item active h-90"
-					style="background-image: url('img/fixed/brose-production-line.jpg')">
+				<div class="carousel-item active h-90" style="background-image: url('img/fixed/failure-report.jpg')">
 					<!--- Start Carousel Caption -->
 					<div class="carousel-caption justify-content-center text-center">
 						<div class="os-animation" data-animation="bounceInUp" data-delay=".6s">
-							<h1>Pallet<br>
-								information</h1>
+							<h1>Reporte de <br>
+								Fallos</h1>
 						</div>
 						<div></div>
 					</div>
@@ -76,29 +75,50 @@
 	<!--- End Home Section -->
 
 	<div class="container base-pane">
-		<div class="col-md-5 search-box">
-			<!-- Search form -->
-			<form class="form-inline md-form form-sm active-cyan-2 mt-2">
-				<input class="form-control form-control-sm mr-3 w-75" type="text"
-					placeholder="Ingrese un número de pallet" aria-label="Search">
-				<i class="fas fa-search" aria-hidden="true"></i>
+		<div class="col-md-12">
+			<form>
+				<div class="row ml-0 mr-0">
+					<div class="form-group col-md-6">
+						<label for="formGroupExampleInput">Numero de empleado</label>
+						<input type="text" class="form-control" id="formGroupExampleInput"
+							placeholder="Numero de empleado">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="exampleInputPassword1">Contraseña</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="formGroupExampleInput">Numero de pallet</label>
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Numero de pallet">
+				</div>
+				<div class="form-group">
+					<label for="exampleFormControlSelect2">Seleccione los componentes dañados</label>
+					<select multiple class="form-control" id="exampleFormControlSelect2">
+						<option>Componente 1</option>
+						<option>Componente 2</option>
+						<option>Componente 3</option>
+						<option>Componente 4</option>
+						<option>Componente 5</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="exampleFormControlSelect1">Nivel de criticidad</label>
+					<select class="form-control" id="exampleFormControlSelect1">
+						<option>Bajo</option>
+						<option>Medio</option>
+						<option>Alto</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Comentarios</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				</div>
+				<button type="submit" class="btn btn-danger">Enviar Reporte</button>
 			</form>
 		</div>
-		<div class="row">
-			<div class="col-md-6 img-pallet">
-				<img src="img/pallets/pallet-bosch.jpg" alt="">
-			</div>
-			<div class="col-md-6 information-listing">
-				<p>Pallet P09S452</p>
-				<ul>
-					<li><span> Numero de serie </span>: P09S452</li>
-					<li><span> Linea de Ensamblaje </span>: Stator</li>
-					<li><span> Edad </span>: 2 Yrs</li>
-					<li><span> Ultimo mantenimiento </span>: November 27, 2019</li>
-					<li><span> Proximo Mantenimiento </span>: November 27, 2019</li>
-				</ul>
-			</div>
-		</div>
+
 
 	</div>
 
