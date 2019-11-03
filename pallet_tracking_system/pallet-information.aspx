@@ -35,7 +35,7 @@
 							<a class="nav-link" href="index.aspx">Inicio</a>
 						</li>
 						<li class="nav-item text-center">
-							<a class="nav-link" href="pallet-information.aspx ">Información del Pallet</a>
+							<a class="nav-link" href="pallet-information.aspx">Información del Pallet</a>
 						</li>
 						<li class="nav-item text-center">
 							<a class="nav-link" href="index.aspx">Reporte de Fallas</a>
@@ -56,13 +56,13 @@
 			<!--- Start Carousel Inner -->
 			<div class="carousel-inner" role="listbox">
 				<!-- Slide One -->
-				<div class="carousel-item active vh-100"
-					style="background-image: url('img/fixed/brose-queretaro-elmarques.jpg')">
+				<div class="carousel-item active h-90"
+					style="background-image: url('img/fixed/brose-production-line.jpg')">
 					<!--- Start Carousel Caption -->
 					<div class="carousel-caption justify-content-center text-center">
 						<div class="os-animation" data-animation="bounceInUp" data-delay=".6s">
-							<h1>Pallet tracking <br>
-								system</h1>
+							<h1>Pallet<br>
+								information</h1>
 						</div>
 						<div></div>
 					</div>
@@ -70,9 +70,38 @@
 				</div>
 			</div>
 		</div>
+
+		<!--- End Image and Caption -->
 	</div>
-	<!--- End Image and Caption -->
 	<!--- End Home Section -->
+
+	<div class="container base-pane">
+		<div class="col-md-5 search-box">
+			<!-- Search form -->
+			<form class="form-inline md-form form-sm active-cyan-2 mt-2">
+				<input class="form-control form-control-sm mr-3 w-75" type="text"
+					placeholder="Ingrese un número de pallet" aria-label="Search">
+				<i class="fas fa-search" aria-hidden="true"></i>
+			</form>
+		</div>
+		<div class="row">
+			<div class="col-md-6 img-pallet">
+				<img src="img/pallets/pallet-bosch.jpg" alt="">
+			</div>
+			<div class="col-md-6 information-listing">
+				<p>Pallet P09S452</p>
+				<ul>
+					<li><span> Numero de serie </span>: P09S452</li>
+					<li><span> Linea de Ensamblaje </span>: Stator</li>
+					<li><span> Edad </span>: 2 Yrs</li>
+					<li><span> Ultimo mantenimiento </span>: November 27, 2019</li>
+					<li><span> Proximo Mantenimiento </span>: November 27, 2019</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
 	<!--- Script Source Files -->
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
