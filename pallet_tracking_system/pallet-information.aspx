@@ -61,8 +61,8 @@
 					<!--- Start Carousel Caption -->
 					<div class="carousel-caption justify-content-center text-center">
 						<div class="os-animation" data-animation="bounceInUp" data-delay=".6s">
-							<h1>Pallet<br>
-								information</h1>
+							<h1>Información<br>
+								del pallet</h1>
 						</div>
 						<div></div>
 					</div>
