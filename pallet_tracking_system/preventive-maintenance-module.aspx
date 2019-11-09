@@ -31,37 +31,119 @@
                 <!-- Default unchecked -->
 
                 <div class="form-group">
-                    <label for="exampleFormControlSelect2">Seleccione los componentes dañados</label>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
-                        <label class="custom-control-label" for="defaultUnchecked1">CheckItem 1</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
-                        <label class="custom-control-label" for="defaultUnchecked2">CheckItem 2</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
-                        <label class="custom-control-label" for="defaultUnchecked3">CheckItem 3</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
-                        <label class="custom-control-label" for="defaultUnchecked4">CheckItem 4</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked5">
-                        <label class="custom-control-label" for="defaultUnchecked5">CheckItem 5</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
-                        <label class="custom-control-label" for="defaultUnchecked6">CheckItem 6</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked7">
-                        <label class="custom-control-label" for="defaultUnchecked7">CheckItem 7</label>
+
+                    <label for="exampleFormControlSelect2">Seleccione las tareas realizadas</label>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
+                                <label class="custom-control-label" for="defaultUnchecked1">Moby dañado</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
+                                <label class="custom-control-label" for="defaultUnchecked2">Bases guia de pallets parte
+                                    inferior
+                                    Quebradas</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
+                                <label class="custom-control-label" for="defaultUnchecked3">Soporte de las bases</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
+                                <label class="custom-control-label" for="defaultUnchecked4">Manchas ( pintura de
+                                    marcador
+                                    )</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked5">
+                                <label class="custom-control-label" for="defaultUnchecked5">Polvo y Rebabas
+                                    (limpieza)</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
+                                <label class="custom-control-label" for="defaultUnchecked6">Pallet con grasa</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked7">
+                                <label class="custom-control-label" for="defaultUnchecked7">Bases de pines de alambre
+                                    dañadas o
+                                    dobladas</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked8">
+                                <label class="custom-control-label" for="defaultUnchecked8">Tornillos ausentes tornillos
+                                    barridos</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked9">
+                                <label class="custom-control-label" for="defaultUnchecked9">Ajuste correcto</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked10">
+                                <label class="custom-control-label" for="defaultUnchecked10">Pines guias desgastados
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked11">
+                                <label class="custom-control-label" for="defaultUnchecked11">Pines Guia alineados
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked12">
+                                <label class="custom-control-label" for="defaultUnchecked12">Pines Guian
+                                    incorrectos</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked13">
+                                <label class="custom-control-label" for="defaultUnchecked13">Altura de pines</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
+                                <label class="custom-control-label" for="defaultUnchecked1">Bujes dañados</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
+                                <label class="custom-control-label" for="defaultUnchecked2">Ajustador de aluminio dañado
+                                    o desgastado</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
+                                <label class="custom-control-label" for="defaultUnchecked3">Tuerca de ajuste de flecha
+                                    guía dañada o desgastada</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
+                                <label class="custom-control-label" for="defaultUnchecked4">Resortes dañados o
+                                    desgastados</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked5">
+                                <label class="custom-control-label" for="defaultUnchecked5">Tuercas / vastago dañado o
+                                    desgastado</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
+                                <label class="custom-control-label" for="defaultUnchecked6">Placa lateral dañada y en
+                                    presente </label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked7">
+                                <label class="custom-control-label" for="defaultUnchecked7">Aspirar todas las areas del
+                                    pallet</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked8">
+                                <label class="custom-control-label" for="defaultUnchecked8">Limpieza general con contct
+                                    cleaner</label>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-               
 
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Comentarios</label>
