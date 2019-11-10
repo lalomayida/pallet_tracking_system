@@ -83,7 +83,6 @@
 	<script src="js/waypoints.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/jquery.counterup.js"></script>
-	<script src="js/validator.js"></script>
-	<script src="js/contact.js"></script>
+	<script src="js/Chart.js"></script>
 </body>
 </html>
