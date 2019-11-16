@@ -12,14 +12,15 @@ public partial class reports_and_dashboards : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if(!IsPostBack)
+            showData();
     }
     private void showData()
     {
         String ptsDBConnection = ConfigurationManager.AppSettings["ptsConnection"].ToString();
         System.Data.SqlClient.SqlConnection con = new SqlConnection(ptsDBConnection);
         String query = "Select top 100 AirTemperature From tbWeathers Where stationID = 1 order by id desc";
-            SqlCommand cmd = new SqlCommand(query, con);
+        SqlCommand cmd = new SqlCommand(query, con);
         DataTable tb = new DataTable();
         try
         {
