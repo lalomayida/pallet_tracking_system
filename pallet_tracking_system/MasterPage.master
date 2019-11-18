@@ -84,5 +84,7 @@
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/jquery.counterup.js"></script>
 	<script src="js/Chart.js"></script>
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+	<script src="js/QR-reader.js"></script>
 </body>
 </html>
