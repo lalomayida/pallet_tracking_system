@@ -11,4 +11,5 @@ public partial class pallet_information_module : System.Web.UI.Page
     {
 
     }
+
 }

@@ -14,9 +14,9 @@
         <div class="col-md-5 search-box">
             <!-- Search form -->
             <form class="form-inline md-form form-sm active-cyan-2 mt-2">
-                <input class="form-control form-control-sm mr-3 w-75" type="text"
-                    placeholder="Ingrese un número de pallet" aria-label="Search">
-                <i class="fas fa-search" aria-hidden="true"></i>
+                <input type=text placeholder="Numero de pallet" class=qrcode-text><label
+                    class=qrcode-text-btn><input type=file accept="image/*" capture=environment
+                        onchange="openQRCamera(this);" tabindex=-1></label>
             </form>
         </div>
         <div class="row">
