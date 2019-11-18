@@ -24,9 +24,11 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Numero de pallet</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Numero de pallet">
+                <div class="col-md-5 search-box">
+                    <form class="form-inline md-form form-sm active-cyan-2 mt-2">
+                        <input type=text placeholder="Numero de pallet" class=qrcode-text>
+                        <label class="qrcode-text-btn fix"><input type=file accept="image/*" capture=environment onchange="openQRCamera(this);" tabindex=-1></label>
+                    </form>
                 </div>
                 <!-- Default unchecked -->
 

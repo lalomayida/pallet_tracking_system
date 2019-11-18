@@ -12,13 +12,12 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="sectionContent" Runat="Server">
     <div class="container base-pane">
         <div class="col-md-5 search-box">
-            <!-- Search form -->
             <form class="form-inline md-form form-sm active-cyan-2 mt-2">
-                <input type=text placeholder="Numero de pallet" class=qrcode-text><label
-                    class=qrcode-text-btn><input type=file accept="image/*" capture=environment
-                        onchange="openQRCamera(this);" tabindex=-1></label>
+                <input type=text placeholder="Numero de pallet" class=qrcode-text>
+                <label class=qrcode-text-btn><input type=file accept="image/*" capture=environment onchange="openQRCamera(this);" tabindex=-1></label>
             </form>
         </div>
+        
         <div class="row">
             <div class="col-md-6 img-pallet">
                 <img src="img/pallets/pallet-bosch.jpg" alt="">

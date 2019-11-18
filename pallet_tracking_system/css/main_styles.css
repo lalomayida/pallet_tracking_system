@@ -104,9 +104,15 @@ body {
   margin-left:-1.7em; 
   cursor:pointer
 }
+
+.fix{
+  margin: 1em -2em 0 !important;
+}
+
 .qrcode-text-btn > input[type=file] {
   position:absolute; 
   overflow:hidden; 
+  width:1px;
   height:1px; 
   opacity:0
 }
