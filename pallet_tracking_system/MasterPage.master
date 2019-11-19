@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="shortcut icon" href="img/logos/icon-logo.ico">
+	<title>Pallet Tracking System</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main_styles.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.css">
+	<link rel="stylesheet" href="css/arrow.css">
+	<link rel="stylesheet" href="css/fixed.css">
+	<link rel="stylesheet" href="css/waypoints.css">
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="home">
+		<!--- Navigation -->
+		<nav class="navbar solid navbar-expand-xl fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#home"><img src="img/logos/red-logo.png" alt=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item text-center">
+							<a class="nav-link" href="index.aspx">Inicio</a>
+						</li>
+						<li class="nav-item text-center">
+							<a class="nav-link" href="pallet-information-module.aspx ">Información del Pallet</a>
+						</li>
+						<li class="nav-item text-center">
+							<a class="nav-link" href="failure-report-module.aspx">Reporte de Fallas</a>
+						</li>
+						<li class="nav-item text-center">
+							<a class="nav-link" href="preventive-maintenance-module.aspx">Mantenimiento Preventivo</a>
+						</li>
+						<li class="nav-item text-center">
+							<a class="nav-link" href="reports-and-dashboards.aspx">Reportes y KPI's</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--- End Navigation -->
+		<!--- Start Image and Caption -->
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<!--- Start Carousel Inner -->
+			<div class="carousel-inner" role="listbox">
+				<!-- Slide One -->
+				<asp:ContentPlaceHolder id="heroImage" runat="server">
+					
+				</asp:ContentPlaceHolder>
+					<!--- Start Carousel Caption -->
+					<div class="carousel-caption justify-content-center text-center">
+						<div class="os-animation" data-animation="bounceInUp" data-delay=".6s">
+							<asp:ContentPlaceHolder id="captionHeroImage" runat="server">				
+							
+							</asp:ContentPlaceHolder>
+						</div>
+						<div></div>
+					</div>
+					<!--- End Carousel Caption -->
+				</div>
+			</div>
+		</div>        
+	</div>
+	<asp:ContentPlaceHolder id="sectionContent" runat="server">				
+	</asp:ContentPlaceHolder>
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/waypoints.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery.counterup.js"></script>
+	<script src="js/Chart.js"></script>
+</body>
+</html>
