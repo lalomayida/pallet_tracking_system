@@ -4,9 +4,12 @@
 
 <html>
 <head runat="server">
+    <script src="js/jquery-3.3.1.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link rel="shortcut icon" href="img/logos/icon-logo.ico">
 	<title>Pallet Tracking System</title>
+    <link rel="stylesheet" href="css/pallet-information.css">
+    <link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main_styles.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -22,7 +25,7 @@
 <body>
     <div id="home">
 		<!--- Navigation -->
-		<nav class="navbar solid navbar-expand-xl fixed-top">
+		<!-- <nav class="navbar solid navbar-expand-xl fixed-top">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#home"><img src="img/logos/red-logo.png" alt=""></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -49,7 +52,7 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</nav> -->
 		<!--- End Navigation -->
 		<!--- Start Image and Caption -->
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -75,7 +78,7 @@
 	</div>
 	<asp:ContentPlaceHolder id="sectionContent" runat="server">				
 	</asp:ContentPlaceHolder>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--<script src="js/jquery-3.3.1.min.js"></script>-->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
 	<script src="js/custom.js"></script>
