@@ -10,149 +10,81 @@
         preventivo</h1>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="sectionContent" Runat="Server">
+
+    <div class="container base-pane" id="spinner">
+        <br />
+        <div class="row">
+            <div class="col-md-5">
+                
+            </div>
+            <div class="col-md-4">
+                <div class="loader"></div>
+            </div>
+            <div class="col-md-3">
+                
+            </div>
+        </div>
+    </div>
+
     <div class="container base-pane">
         <div class="col-md-12">
-            <form>
-                <div class="row ml-0 mr-0">
-                    <div class="form-group col-md-6">
-                        <label for="formGroupExampleInput">Numero de empleado</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput"
-                            placeholder="Numero de empleado">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="exampleInputPassword1">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-                    </div>
-                </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput">Numero de pallet</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Numero de pallet">
+                    <label for="formGroupExampleInput">Numero de empleado</label>
+                    <input type="text" class="form-control" id="employeeID"
+                        placeholder="Numero de empleado">
                 </div>
                 <!-- Default unchecked -->
-
-                <div class="form-group">
-
-                    <label for="exampleFormControlSelect2">Seleccione las tareas realizadas</label>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
-                                <label class="custom-control-label" for="defaultUnchecked1">Moby dañado</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
-                                <label class="custom-control-label" for="defaultUnchecked2">Bases guia de pallets parte
-                                    inferior
-                                    Quebradas</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
-                                <label class="custom-control-label" for="defaultUnchecked3">Soporte de las bases</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
-                                <label class="custom-control-label" for="defaultUnchecked4">Manchas ( pintura de
-                                    marcador
-                                    )</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked5">
-                                <label class="custom-control-label" for="defaultUnchecked5">Polvo y Rebabas
-                                    (limpieza)</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
-                                <label class="custom-control-label" for="defaultUnchecked6">Pallet con grasa</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked7">
-                                <label class="custom-control-label" for="defaultUnchecked7">Bases de pines de alambre
-                                    dañadas o
-                                    dobladas</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked8">
-                                <label class="custom-control-label" for="defaultUnchecked8">Tornillos ausentes tornillos
-                                    barridos</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked9">
-                                <label class="custom-control-label" for="defaultUnchecked9">Ajuste correcto</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked10">
-                                <label class="custom-control-label" for="defaultUnchecked10">Pines guias desgastados
-                                </label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked11">
-                                <label class="custom-control-label" for="defaultUnchecked11">Pines Guia alineados
-                                </label>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked12">
-                                <label class="custom-control-label" for="defaultUnchecked12">Pines Guian
-                                    incorrectos</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked13">
-                                <label class="custom-control-label" for="defaultUnchecked13">Altura de pines</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
-                                <label class="custom-control-label" for="defaultUnchecked1">Bujes dañados</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
-                                <label class="custom-control-label" for="defaultUnchecked2">Ajustador de aluminio dañado
-                                    o desgastado</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
-                                <label class="custom-control-label" for="defaultUnchecked3">Tuerca de ajuste de flecha
-                                    guía dañada o desgastada</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
-                                <label class="custom-control-label" for="defaultUnchecked4">Resortes dañados o
-                                    desgastados</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked5">
-                                <label class="custom-control-label" for="defaultUnchecked5">Tuercas / vastago dañado o
-                                    desgastado</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
-                                <label class="custom-control-label" for="defaultUnchecked6">Placa lateral dañada y en
-                                    presente </label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked7">
-                                <label class="custom-control-label" for="defaultUnchecked7">Aspirar todas las areas del
-                                    pallet</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked8">
-                                <label class="custom-control-label" for="defaultUnchecked8">Limpieza general con contct
-                                    cleaner</label>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
 
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Comentarios</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-danger">Enviar Reporte</button>
-            </form>
+                <button class="btn btn-danger" id="enviar">Registrar mantenimiento</button>
         </div>
 
 
     </div>
+
+    <script type="text/javascript">
+         $(document).ready(function () {
+             $("#spinner").hide();
+
+         });
+
+         function getUrlParameter(name) {
+             name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+             var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+             var results = regex.exec(location.search);
+             return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+         };
+
+
+         $("#enviar").click(function () {
+             var datos = {};
+             datos.employeeID = $("#employeeID").val();
+             datos.palletNumber = getUrlParameter("pallet");
+             datos.comments = $("#exampleFormControlTextarea1").val();
+             console.log(datos);
+
+
+             console.log(JSON.stringify(datos));
+
+             $("#form").hide();
+             $("#spinner").show();
+             $.ajax({
+                 type: 'post',
+                 url: `https://intrepid-moose.herokuapp.com/maintenance`,
+                 dataType: 'text',
+                 contentType: 'application/json',
+                 data: JSON.stringify(datos),
+                 success: function (response) {
+                     var data = JSON.parse(response);
+                     console.log(data);
+                     window.location.replace(`https://pallet-tracking-system.conveyor.cloud/index.aspx?line=1`);
+                 }
+             });
+         });
+
+    
+    </script>
 </asp:Content>

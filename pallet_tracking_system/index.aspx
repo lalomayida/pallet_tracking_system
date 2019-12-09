@@ -11,8 +11,8 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="captionHeroImage" Runat="Server">
 
-    <h1>Strator</h1>
-    <h1>Production Line</h1>
+    <h1>Línea de producción</h1>
+    <h1>Stator</h1>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="sectionContent" Runat="Server">
@@ -36,7 +36,7 @@
         <div class="col-md-2">
             </div>
         <div class="col-md-8">
-            <h3 class="progress-title">Line productivity</h3>
+            <h3 class="progress-title">Producción de la línea</h3>
             <div class="progress purple">
                 <div class="progress-bar" style="width:15%; background:#34B7F1" id="completion">
                     <div class="progress-value" id="completionValue">15%</div>
@@ -52,16 +52,20 @@
     <div class="container base-pane" id="lineInformation">
         <div class="row">
             <div class="col-md-4">
-                <h2>Total of pallets:</h2> <h1 id="totalPallets" style="font-weight=normal"></h1>
+                <h2>Total de pallets:</h2> <h1 id="totalPallets" style="font-weight=normal"></h1>
             </div>
             <div class="col-md-4">
-                <h2>Failure pallets:</h2> <h1 id="failurePallets" style="font-weight=normal"></h1>
+                <h2>Pallets en reparación:</h2> <h1 id="failurePallets" style="font-weight=normal"></h1>
             </div>
             <div class="col-md-4">
-                <h2>Maintenance pallets:</h2> <h1 id="maintenancePallets" style="font-weight=normal"></h1>
+                <h2>Pallets en mantenimiento:</h2> <h1 id="maintenancePallets" style="font-weight=normal"></h1>
             </div>
         </div>
 
+    </div>
+
+    <div>
+        <iframe width="1250" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiMzI3N2RmOWItY2IxMC00ZDMxLTk3OWMtNGMzN2Q4YWQxZWY4IiwidCI6IjBkOGQ2Yjk3LWUwNWQtNDYwYy1iNmI1LTE5YjdkMDIwZjQ3YSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
     </div>
 
     <script type="text/javascript">
@@ -76,7 +80,7 @@
 
             $.ajax({
                 type: 'get',
-                url: `http://localhost:3000/pallet/lineHealth?line=${lineID}`,
+                url: `https://intrepid-moose.herokuapp.com/pallet/lineHealth?line=${lineID}`,
                 dataType: 'text',
                 success: function (response) {
                     var data = JSON.parse(response);
@@ -97,7 +101,7 @@
                             }
                         }
 
-                        var productionCapacity = (totalPallets - failurePallets - maintenancePallets) / totalPallets * 100;
+                        var productionCapacity = parseInt((totalPallets - failurePallets - maintenancePallets) / totalPallets * 100);
                         if (productionCapacity >= 80) {
                             $("#completion").css("background", "#34B7F1");
 

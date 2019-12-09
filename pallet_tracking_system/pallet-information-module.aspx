@@ -37,7 +37,7 @@
             <div class="col-md-4">
                 <div>
                     <h2>
-                        There was an error, try scanning the pallet QR again
+                        Hubo un error leyendo el código QR, trata de nuevo
                     </h2>
                 </div>
             </div>
@@ -75,17 +75,17 @@
             </div>
             <div class="col-md-4">
                 <button type="button" class="btn btn-dark failure">
-                    Report a failure
+                    Reportar una falla
                 </button>
             </div>
             <div class="col-md-5">
                 <button type="button" class="btn btn-dark maintenance">
-                    Perform a maintenance
+                    Realizar un mantenimiento
                 </button>
             </div>
             <div class="col-md-2">
                 <button type="button" class="btn btn-dark cancel">
-                    Cancel
+                    Cancelar
                 </button>
             </div>
         </div>
@@ -98,12 +98,12 @@
             </div>
             <div class="col-md-8">
                 <button type="button" class="btn btn-dark return">
-                    Return pallet to line
+                    Regresar el pallet a la línea
                 </button>
             </div>
             <div class="col-md-3">
                 <button type="button" class="btn btn-dark cancel">
-                    Cancel
+                    Cancelar
                 </button>
             </div>
         </div>
@@ -122,7 +122,7 @@
             var palletID = getUrlParameter("pallet");
             $.ajax({
                 type: 'get',
-                url: `http://localhost:3000/pallet?pallet=${palletID}`,
+                url: `https://intrepid-moose.herokuapp.com/pallet?pallet=${palletID}`,
                 dataType: 'text',
                 success: function (response) {
                     var data = JSON.parse(response);
@@ -162,17 +162,17 @@
 
         $(".failure").click(function () {
             console.log("falla");
-            window.location.replace(`http://localhost:56041/failure-report-module.aspx?pallet=${getUrlParameter("pallet")}`);
+            window.location.replace(`https://pallet-tracking-system.conveyor.cloud/failure-report-module.aspx?pallet=${getUrlParameter("pallet")}`);
         });
 
         $(".maintenance").click(function () {
             console.log("mantenimiento");
-            window.location.replace(`http://localhost:56041/preventive-maintenance-module.aspx?pallet=${getUrlParameter("pallet")}`);
+            window.location.replace(`https://pallet-tracking-system.conveyor.cloud/preventive-maintenance-module.aspx?pallet=${getUrlParameter("pallet")}`);
         });
 
         $(".cancel").click(function () {
             console.log("cancelar");
-            window.location.replace("http://localhost:56041/index.aspx");
+            window.location.replace("https://pallet-tracking-system.conveyor.cloud/index.aspx?line=1");
         });
 
         $(".return").click(function () {
@@ -185,7 +185,7 @@
             $("#spinner").show();
             $.ajax({
                 type: 'get',
-                url: `http://localhost:3000/pallet?pallet=${palletID}`,
+                url: `https://intrepid-moose.herokuapp.com/pallet?pallet=${palletID}`,
                 dataType: 'text',
                 success: function (response) {
                     var data = JSON.parse(response);
@@ -196,21 +196,21 @@
                         
                             $.ajax({
                                 type: 'post',
-                                url: `http://localhost:3000/failure/returnPallet?pallet=${palletID}`,
+                                url: `https://intrepid-moose.herokuapp.com/failure/returnPallet?pallet=${palletID}`,
                                 dataType: 'text',
                                 success: function (response) {
-                                    window.location.replace(`http://localhost:56041/index.aspx?line=1`);
+                                    window.location.replace(`https://pallet-tracking-system.conveyor.cloud/index.aspx?line=1`);
                                 }
                             });
-                        } else {
-                            /*$.ajax({
-                                type: 'get',
-                                url: `http://localhost:3000/pallet?pallet=${palletID}`,
+                     } else {
+                            $.ajax({
+                                type: 'post',
+                                url: `https://intrepid-moose.herokuapp.com/maintenance/finishMaintenance?pallet=${palletID}`,
                                 dataType: 'text',
                                 success: function (response) {
-
+                                    window.location.replace(`https://pallet-tracking-system.conveyor.cloud/index.aspx?line=1`);
                                 }
-                            });*/
+                            });
                         }
 
                 }
