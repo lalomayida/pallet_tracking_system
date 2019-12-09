@@ -80,7 +80,7 @@
                  success: function (response) {
                      var data = JSON.parse(response);
                      console.log(data);
-                     window.location.replace(`https://pallet-tracking-system.conveyor.cloud/index.aspx?line=1`);
+                     window.location.replace(`https://brose-pallet-system.azurewebsites.net/index.aspx?line=1`);
                  }
              });
          });

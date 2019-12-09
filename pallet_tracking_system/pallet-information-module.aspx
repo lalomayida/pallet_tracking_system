@@ -162,17 +162,17 @@
 
         $(".failure").click(function () {
             console.log("falla");
-            window.location.replace(`https://pallet-tracking-system.conveyor.cloud/failure-report-module.aspx?pallet=${getUrlParameter("pallet")}`);
+            window.location.replace(`https://brose-pallet-system.azurewebsites.net/failure-report-module.aspx?pallet=${getUrlParameter("pallet")}`);
         });
 
         $(".maintenance").click(function () {
             console.log("mantenimiento");
-            window.location.replace(`https://pallet-tracking-system.conveyor.cloud/preventive-maintenance-module.aspx?pallet=${getUrlParameter("pallet")}`);
+            window.location.replace(`https://brose-pallet-system.azurewebsites.net/preventive-maintenance-module.aspx?pallet=${getUrlParameter("pallet")}`);
         });
 
         $(".cancel").click(function () {
             console.log("cancelar");
-            window.location.replace("https://pallet-tracking-system.conveyor.cloud/index.aspx?line=1");
+            window.location.replace("https://brose-pallet-system.azurewebsites.net/index.aspx?line=1");
         });
 
         $(".return").click(function () {
@@ -199,7 +199,7 @@
                                 url: `https://intrepid-moose.herokuapp.com/failure/returnPallet?pallet=${palletID}`,
                                 dataType: 'text',
                                 success: function (response) {
-                                    window.location.replace(`https://pallet-tracking-system.conveyor.cloud/index.aspx?line=1`);
+                                    window.location.replace(`https://brose-pallet-system.azurewebsites.net/index.aspx?line=1`);
                                 }
                             });
                      } else {
@@ -208,7 +208,7 @@
                                 url: `https://intrepid-moose.herokuapp.com/maintenance/finishMaintenance?pallet=${palletID}`,
                                 dataType: 'text',
                                 success: function (response) {
-                                    window.location.replace(`https://pallet-tracking-system.conveyor.cloud/index.aspx?line=1`);
+                                    window.location.replace(`https://brose-pallet-system.azurewebsites.net/index.aspx?line=1`);
                                 }
                             });
                         }
